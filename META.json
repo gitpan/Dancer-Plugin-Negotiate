@@ -35,10 +35,10 @@
             "Dancer" : "1.312",
             "HTTP::Negotiate" : "6.01",
             "Modern::Perl" : "0",
-            "Test::More" : "0"
+            "Test::Most" : "0"
          }
       }
    },
    "release_status" : "stable",
-   "version" : "0.01"
+   "version" : "0.02"
 }

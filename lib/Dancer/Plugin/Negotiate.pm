@@ -12,11 +12,11 @@ Dancer::Plugin::Negotiate - Content negotiation plugin for Dancer
 
 =head1 VERSION
 
-Version 0.01
+Version 0.02
 
 =cut
 
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
 =head1 SYNOPSIS
 
@@ -169,7 +169,7 @@ sub _langmap {
 			Language => scalar(ref $_ eq 'HASH' ? (keys   %$_)[0] : $_ ),
 			Quality  => scalar(ref $_ eq 'HASH' ? (values %$_)[0] : 1  )
 		};
-		my $id = uc $opt->{Language};
+		my $id = lc $opt->{Language};
 		$grep->($opt) ? ( $id => $opt ) : undef;
 	} @$langs;
 }
