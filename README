@@ -2,7 +2,7 @@ NAME
     Dancer::Plugin::Negotiate - Content negotiation plugin for Dancer
 
 VERSION
-    Version 0.02
+    Version 0.031
 
 DESCRIPTION
     This module is a wrapper for HTTP::Negotiate.
